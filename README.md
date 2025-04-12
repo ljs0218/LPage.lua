@@ -6,10 +6,10 @@
 ``` lua
 local page = LClient.LoadPage("PunkPage")
 
-local closeButton = self.page:GetControlByHash("CloseButton")
+local closeButton = page:GetControlByHash("CloseButton")
 closeButton.onClick.Add(function()
     print("페이지를 닫았어요.")
-    self:Close()
+    page:Close()
 end)
 ```
 
